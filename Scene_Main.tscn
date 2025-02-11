@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://bwtu5pcb3ne4p"]
+[gd_scene load_steps=3 format=3 uid="uid://bwtu5pcb3ne4p"]
+
+[ext_resource type="PackedScene" uid="uid://dd7r7e43naqj" path="res://scenes/units/worker.tscn" id="1_eiist"]
+[ext_resource type="Texture2D" uid="uid://dul6ycb3xxfhq" path="res://art/planets/pixel planets/Terran.png" id="4_t5lat"]
 
 [node name="Node2D" type="Node2D"]
+
+[node name="worker" parent="." instance=ExtResource("1_eiist")]
+
+[node name="Terran" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(90, -58)
+texture = ExtResource("4_t5lat")
